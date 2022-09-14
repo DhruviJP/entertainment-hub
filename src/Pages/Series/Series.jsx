@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import CustomPagiantion from '../../Components/Pagination/CustomPagiantion';
+import CustomPagination from '../../Components/Pagination/CustomPagiantion';
 import SingleContent from '../../Components/SingleContent/SingleContent';
 
 const Series = () => {
@@ -10,7 +10,7 @@ const Series = () => {
     const [numOfPages, setnumOfPages] = useState([]);
 
     const fetchSeries = async () => {
-        const { data } = await axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=ec227bca234ffe24cdf4bb870eaba716&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0`);
+        const { data } = await axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=ec227bca234ffe24cdf4bb870eaba716&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0&page=${page}`);
 
         console.log(data);
         setContent(data.results);
@@ -42,6 +42,9 @@ const Series = () => {
                     ))
                 }
             </div>
+            {numOfPages > 1 && (
+                <CustomPagination setPage={setPage} numOfPages={500} />
+            )}
         </div>
     )
 }

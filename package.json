@@ -1,7 +1,7 @@
 {
   "name": "entertainment-hub",
   "version": "0.1.0",
-  "homepage": "https://dhruvijp.github.io/entertainment-hub", 
+  "homepage": "https://dhruvijp.github.io/entertainment-hub/", 
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.4",

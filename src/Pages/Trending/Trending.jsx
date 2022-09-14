@@ -10,7 +10,7 @@ const Trending = () => {
     const [content, setContent] = useState([]);
 
     const fetchtrending = async () => {
-        const { data } = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=ec227bca234ffe24cdf4bb870eaba716&page${page}`);
+        const { data } = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=ec227bca234ffe24cdf4bb870eaba716&page=${page}`);
 
         setContent(data.results);
         console.log(data.results);
