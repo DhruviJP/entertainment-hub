@@ -11,9 +11,52 @@
     border-radius: 10px;
 }
 
+.wrapepr_main h2 span {
+    font-weight: normal;
+    font-size: 20px;
+}
+
 .tagline {
-    padding-bottom: 10px;
     align-self: center;
+    font-style: italic;
+}
+
+.overview_title {
+    display: block;
+    font-weight: bold;
+}
+
+.progress_circle {
+    width: 68px;
+    height: 68px;
+}
+
+
+.watch_video a {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.progress_circle .CircularProgressbar .CircularProgressbar-path {
+    stroke: #fff;
+}
+
+.progress_circle .CircularProgressbar .CircularProgressbar-trail {
+    stroke: #000 !important;
+}
+
+.progress_circle .CircularProgressbar .CircularProgressbar-text {
+    fill: #fff;
+}
+
+.wrapepr_main>div:last-child {
+    margin-left: 30px;
+}
+
+.wrapepr_main,
+.slider_wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .ContentModal {
@@ -72,7 +115,6 @@
 
     .ContentModal__portrait {
         display: flex;
-        width: 38%;
     }
 
     .ContentModal {
@@ -93,5 +135,16 @@
 
     .ContentModal__description {
         font-size: 22px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .wrapepr_main {
+        display: block;
+    }
+
+    .wrapepr_main>div:last-child {
+        margin-left: 0px;
+        margin-top: 15px;
     }
 }

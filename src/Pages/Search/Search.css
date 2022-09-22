@@ -58,3 +58,8 @@
 .tablist .nav-item {
     width: 50%;
 }
+
+.trending {
+    padding: 15px 10px 0;
+    justify-content: center;
+}

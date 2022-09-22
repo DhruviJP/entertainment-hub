@@ -10,7 +10,9 @@ const Series = () => {
     const [numOfPages, setnumOfPages] = useState([]);
 
     const fetchSeries = async () => {
-        const { data } = await axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=ec227bca234ffe24cdf4bb870eaba716&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0&page=${page}`);
+        const { data } = await axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}`);
+
+
 
         console.log(data);
         setContent(data.results);

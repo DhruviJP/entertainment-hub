@@ -15,7 +15,7 @@ const Search = () => {
 
 
     const fetchSearch = (async () => {
-        const { data } = await axios.get(`https://api.themoviedb.org/3/search/${type ? "tv" : "movie"}?api_key=ec227bca234ffe24cdf4bb870eaba716&query=${searchText}`)
+        const { data } = await axios.get(`https://api.themoviedb.org/3/search/multi?api_key=ec227bca234ffe24cdf4bb870eaba716&query=${searchText}`)
 
         console.log(data);
         setContent(data.results);
@@ -50,10 +50,6 @@ const Search = () => {
             </Form>
 
             <div>
-                <span className='pageTitle'>
-
-                </span>
-
                 <div className="trending">
                     {content &&
                         content.map((c) => (

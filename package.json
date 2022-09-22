@@ -1,7 +1,7 @@
 {
   "name": "entertainment-hub",
   "version": "0.1.0",
-  "homepage": "https://dhruvijp.github.io/entertainment-hub/", 
+  "homepage": "https://dhruvijp.github.io/entertainment-hub/",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -12,11 +12,14 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
+    "dateformat": "^5.0.3",
     "gh-pages": "^4.0.0",
+    "gradient-from-image": "^0.0.7",
     "react": "^18.2.0",
     "react-alice-carousel": "^2.6.4",
     "react-bootstrap": "^2.5.0",
     "react-bootstrap-icons": "^1.8.4",
+    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",

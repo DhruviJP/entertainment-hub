@@ -5,6 +5,7 @@ import SingleContent from '../../Components/SingleContent/SingleContent';
 import './Trending.css';
 import CustomPagiantion from '../../Components/Pagination/CustomPagiantion';
 
+
 const Trending = () => {
     const [page, setPage] = useState(1);
     const [content, setContent] = useState([]);
