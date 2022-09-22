@@ -1,14 +1,14 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { img_500, unavailable, img_original } from '../../Config/Config';
+import { img_500, unavailable } from '../../Config/Config';
 import "./DetailsPage.css";
 import dateFormat from "dateformat";
 import Carousel from '../Carousel/Carousel';
 import TrailerVideo from '../TrailerVideo/TrailerVideo';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import grad from 'gradient-from-image'
+// import grad from 'gradient-from-image'
 
 function DetailsPage() {
 
@@ -25,25 +25,18 @@ function DetailsPage() {
         var rminutes = Math.round(minutes);
         return rhours + "h " + rminutes + "m";
     }
-    // let url = "https://image.tmdb.org/t/p/w500";
-    // grad.gr(url).then(gr => {
-    //     let bg = "linear-gradient(" + gr.backdrop_path + ")";
 
 
+    // grad?.gr(`${img_original}/${content.backdrop_path}`).then((gr, mode) => {
+    //     console.log(gr);
+    //     mode = "no-cors";
+    //     let bg = "linear-gradient(" + gr.vibrant + ")";
+    //     let el = document?.querySelector(".wrapepr_main");
+    //     el.style.background = bg;
     //     console.log(bg);
-    // })
+    // });
 
-    grad?.gr(`${img_original}/${content.backdrop_path}`).then((gr, mode) => {
-        console.log(gr);
-        mode = "no-cors";
-        let bg = "linear-gradient(" + gr.vibrant + ")";
-        let el = document?.querySelector(".wrapepr_main");
-        el.style.background = bg;
-        console.log(bg);
-    });
 
-    // const value = 0.66;
-    // const [page, setPage] = useState(1);
 
     const fetchData = async () => {
 
@@ -71,21 +64,21 @@ function DetailsPage() {
                     {content && (
                         <>
                             <div className='bg_main'
-                                style={
-                                    {
-                                        backgroundImage: `url(${img_original}/${content.backdrop_path})`,
-                                        backgroundSize: '100%',
-                                        backgroundRepeat: 'no-repeat',
-                                        color: '#fff',
-                                    }
-                                }
+                            // style={
+                            //     {
+                            //         backgroundImage: `url(${img_original}/${content.backdrop_path})`,
+                            //         backgroundSize: '100%',
+                            //         backgroundRepeat: 'no-repeat',
+                            //         color: '#fff',
+                            //     }
+                            // }
                             >
                                 <div className='wrapepr_main'
-                                    style={
-                                        {
-                                            background: `linear-gradient`,
-                                        }
-                                    }
+                                // style={
+                                //     {
+                                //         background: `linear-gradient`,
+                                //     }
+                                // }
                                 >
                                     <div>
                                         <img className='ContentModal__portrait'

@@ -33,20 +33,24 @@
 
 
 .watch_video a {
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #39445a;
+    color: #39445a;
 }
 
 .progress_circle .CircularProgressbar .CircularProgressbar-path {
-    stroke: #fff;
+    stroke: #d2d531;
 }
 
-.progress_circle .CircularProgressbar .CircularProgressbar-trail {
-    stroke: #000 !important;
+.progress_circle .CircularProgressbar {
+    background-color: #39445a;
+    border-radius: 100%;
+    padding: 5px;
 }
 
 .progress_circle .CircularProgressbar .CircularProgressbar-text {
     fill: #fff;
+    font-weight: bold;
+    font-size: 28px;
 }
 
 .wrapepr_main>div:last-child {
