@@ -19,6 +19,7 @@
     margin-left: 10px;
     color: #000;
     line-height: 25px;
+    border: 1px solid #4a5874;
 }
 
 .searchForm button:hover {

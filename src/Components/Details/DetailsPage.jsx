@@ -60,7 +60,7 @@ function DetailsPage() {
 
             <div className=''>
 
-                <div>
+                <div className='custom_container'>
                     {content && (
                         <>
                             <div className='bg_main'

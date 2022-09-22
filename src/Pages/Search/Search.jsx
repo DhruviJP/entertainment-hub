@@ -30,7 +30,7 @@ const Search = () => {
     // };
 
     return (
-        <div>
+        <div className='custom_container'>
             <span className='pageTitle'>
                 Search
             </span>

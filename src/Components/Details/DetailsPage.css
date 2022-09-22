@@ -53,6 +53,11 @@
     font-size: 28px;
 }
 
+.custom_container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 .wrapepr_main>div:last-child {
     margin-left: 30px;
 }
@@ -60,7 +65,6 @@
 .wrapepr_main,
 .slider_wrapper {
     display: flex;
-    justify-content: space-between;
 }
 
 .ContentModal {
